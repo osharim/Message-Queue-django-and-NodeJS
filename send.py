@@ -23,6 +23,6 @@ channel.basic_publish(exchange = '',
                          delivery_mode = 2, # make message persistent
                       ))
 
-print "[X] send %s"  % (message ,)
+print "[X] send %s from python"  % (message ,)
  
 connection.close()

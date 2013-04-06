@@ -4,10 +4,10 @@ var amqp = require('amqp');
 var connection = amqp.createConnection({ host: "localhost", port: 5672 });
 
 connection.on('ready', function(){
-    connection.queue('hellowww', {autoDelete: false,
+    connection.queue('task_queue', {autoDelete: false,
                                     durable: true}, function(queue){
 
-        console.log(' [*] Waiting for messages. To exit press CTRL+C');
+        console.log(' [*] Waiting for messages from nodeJS. To exit press CTRL+C');
 
         queue.subscribe({ack: true, prefetchCount: 1}, function(msg){
             var body = msg.data.toString('utf-8');

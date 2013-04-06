@@ -10,7 +10,7 @@ connection = pika.BlockingConnection(pika.ConnectionParameters(
         host='localhost'))
 channel = connection.channel()
 
-channel.queue_declare(queue='hellowww', durable=True)
+channel.queue_declare(queue='task_queue', durable=True)
 
  
 #our callback
@@ -24,7 +24,7 @@ def suscriber(ch,method , properties , body):
 
 channel.basic_qos(prefetch_count=1)
 channel.basic_consume(suscriber,
-					  queue = 'hellowww' )
+					  queue = 'task_queue' )
 
-print ' [*] Waiting for messages. To exit press CTRL+C'
+print ' [*] Waiting for messages from Python. To exit press CTRL+C'
 channel.start_consuming()
