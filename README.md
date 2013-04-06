@@ -10,9 +10,9 @@ To successfully use the examples you will need a running RabbitMQ server.
 To run this example you need `python`> v2. *, `nodeJS` 0.8 (currently it runs on nodeJS 0.11.1-pre). Have installed `RabbitMQ`. Python 0.9.8 using the `pika` and `amqp` client and client nodeJS:
 
 
-## Installing amqp NodeJS
+## Installing amqp NodeJS in the work directory.
 
- 	npm install amqp
+ 	npm install
 
 ## pika 0.9.8 Python client 
 
@@ -20,16 +20,16 @@ To run this example you need `python`> v2. *, `nodeJS` 0.8 (currently it runs on
 
  The installation depends on pip and git-core packages, you may need to install them first.
 
- 	on ubuntu
+ Ubuntu
 
  	$ sudo apt-get install python-pip git-core
 
- on debian
+ Debian
 
 	$ sudo apt-get install python-setuptools git-core
 	$ sudo easy_install pip
 
-	on windows
+ Windows
 
 	Castigado contra la pared.
 
