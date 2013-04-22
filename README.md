@@ -4,6 +4,10 @@ understands the same protocol as Rabbit. There is a choice of libraries for almo
 every programming language. For python it's no different and there are a bunch of 
 libraries to choose from:
 
+  py-amqplib
+  txAMQP
+  pika
+  In this tutorial  we're going to use pika.
 
 # Node.js && Python code throught RabbitMQ 
 
