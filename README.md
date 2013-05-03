@@ -1,3 +1,7 @@
+#Downloading and Installing RabbitMQ
+
+	sudo apt-get install rabbitmq-server
+
 #RabbitMQ
 RabbitMQ speaks a protocol called AMQP. To use Rabbit you'll need a library that
 understands the same protocol as Rabbit. There is a choice of libraries for almost
