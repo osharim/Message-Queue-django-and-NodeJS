@@ -45,22 +45,32 @@ To run this example you need `python`> v2. *, `nodeJS` 0.8 (currently it runs on
 	$ sudo easy_install pip
 
  Windows
-
-	Castigado contra la pared.
-
+ 
 	> easy_install pip
 	>  pip install pika==0.9.8
 
 
-## Code
+## THE MAGIC
 
-To run the worker rabbitMQ 
+To send data from python to NodeJS
 
-	`node receive.js`
+	`python send.py`
 
-	`python receive.py`
+	`$ node receive.js`
+ 
+ To send data from NodeJS to Python
+ 
+	`$ node send.js`
+	
+	`$ python receive.py`
 
-To run the producer rabbitMQ 
+## WORKERS
 
-	`python send.py` || `node send.js` 
+The message is sending by RabbitMQ Message Queue, then you can try to add more workers (receive.py or receive.js) to process all message in the queue on a distributed way.
+
+Open N terminals and hit (receive.py or receive.js) to start to receive all messages in the queue.
+
+
+ 
+
  
