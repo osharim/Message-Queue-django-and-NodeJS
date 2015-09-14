@@ -13,7 +13,7 @@ libraries to choose from:
   pika
   In this tutorial  we're going to use pika.
 
-# Node.js && Python code throught RabbitMQ 
+# Node.js && Python code through RabbitMQ 
 
  
 To successfully use the examples you will need a running RabbitMQ server.
