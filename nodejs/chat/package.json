@@ -1,0 +1,9 @@
+{
+  "name": "socket-chat",
+  "version": "0.0.1",
+  "description": "RabbitMQRabbitMQ  socket.io app",
+  "dependencies": {
+    "express": "4.10.2",
+    "socket.io": "1.2.0"
+  }
+}
